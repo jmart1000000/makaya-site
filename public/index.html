@@ -1,0 +1,2344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">J-MARTSHOP</title>
+    <link rel="icon" type="image/png" href="icon/thumbnail_LOGO_MAKAYA_023_png.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        :root {
+            --primary-green: #023100;
+            --accent-gold: #e3a808;
+        }
+        
+        /* Reset minimal avec Bootstrap */
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        /* Section héro personnalisée */
+        .hero-section {
+            height: 703px;
+            background-image: url(https://img.freepik.com/vecteurs-libre/technologie-abstraite-fond-vert_1035-17926.jpg?semt=ais_hybrid&w=740);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.685);
+            height: 100%;
+        }
+        
+        /* Logo et branding */
+        .brand-logo {
+            width: 200px;
+        }
+        
+        .brand-subtitle {
+            letter-spacing: 4.9px;
+        }
+        
+        .brand-title {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 130px;
+            color: var(--accent-gold);
+            letter-spacing: 12px;
+        }
+        
+        /* Icônes sociales */
+        .social-icon {
+            width: 25px;
+            height: 25px;
+            border: 2px solid var(--accent-gold);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .social-icon img {
+            width: 20px;
+        }
+        
+        /* Menu personnalisé */
+        .custom-navbar {
+            background-color: var(--primary-green);
+            box-shadow: 0px 6px 9px 1px rgba(0, 0, 0, 0.3);
+        }
+        
+        .custom-navbar .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 15px;
+        }
+        
+        /* Bouton donate */
+        .btn-donate {
+            background-color: transparent;
+            border: 1px solid var(--accent-gold);
+            color: white;
+            width: 170px;
+            height: 40px;
+        }
+        
+        /* Icônes de contact */
+        .contact-icon {
+            background-color: var(--primary-green);
+            border-radius: 50%;
+            padding: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .contact-icon img {
+            width: 12px;
+        }
+        
+        /* Titres de section */
+        .section-title {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 90px;
+            color: var(--accent-gold);
+            letter-spacing: 5px;
+        }
+        
+        /* Section vidéo */
+        .video-section {
+            background: linear-gradient(to bottom, var(--accent-gold), var(--accent-gold), var(--accent-gold), var(--primary-green));
+            border-bottom: 5px solid black;
+            min-height: 450px;
+        }
+        
+        .video-section video, .video-section iframe {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        
+        .video-content h3 {
+            color: var(--primary-green);
+            font-size: 24px;
+        }
+        
+        .video-content p {
+            color: #000000;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        /* Galerie */
+        .gallery-container {
+            background: linear-gradient(to right, var(--primary-green), var(--primary-green));
+            height: 350px;
+            overflow: hidden;
+        }
+        
+        .gallery-slider {
+            display: flex;
+            animation: scroll-gallery 20s linear infinite;
+            margin-top: 25px;
+        }
+        
+        .gallery-slider img {
+            width: 450px;
+            height: auto;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        @keyframes scroll-gallery {
+            from { transform: translateX(2%); }
+            to { transform: translateX(-100%); }
+        }
+        
+        /* Newsletter */
+        .newsletter-section {
+            background-color: #f4f4f4;
+            padding: 50px 0;
+        }
+        
+        .newsletter-content {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .newsletter-title {
+            font-size: 36px;
+            color: var(--primary-green);
+            font-family: "Bebas Neue", sans-serif;
+        }
+        
+        .newsletter-form .form-control {
+            border-radius: 5px;
+            padding: 12px;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        
+        .newsletter-form .btn {
+            background-color: var(--accent-gold);
+            border: none;
+            border-radius: 5px;
+            padding: 12px;
+            font-size: 16px;
+            width: 100%;
+        }
+        
+        .newsletter-form .btn:hover {
+            background-color: #d18b07;
+        }
+        
+        /* Footer */
+        .custom-footer {
+            background-color: #222;
+            color: #bbb;
+            padding: 40px 0 10px 0;
+        }
+        
+        .custom-footer h5 {
+            color: var(--accent-gold);
+            margin-bottom: 15px;
+        }
+        
+        .custom-footer a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .custom-footer a:hover {
+            color: white;
+        }
+        
+        /* Bouton scroll to top */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 1000;
+            background-color: #db7807;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            display: none;
+        }
+        
+        .scroll-to-top:hover {
+            background-color: #555;
+        }
+        
+        /* Membres circulaires */
+        .member-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        /* Styles responsifs avec Bootstrap breakpoints */
+        @media (max-width: 768px) {
+            .brand-title {
+                font-size: 70px;
+            }
+            
+            .section-title {
+                font-size: 50px;
+            }
+            
+            .hero-section {
+                height: auto;
+                min-height: 100vh;
+            }
+            
+            .video-section {
+                min-height: auto;
+            }
+            
+            .video-section video, .video-section iframe {
+                height: 250px;
+            }
+            
+            .gallery-container {
+                height: 200px;
+            }
+            
+            .gallery-slider img {
+                width: 250px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .brand-title {
+                font-size: 50px;
+            }
+            
+            .section-title {
+                font-size: 35px;
+            }
+            
+            .brand-logo {
+                width: 120px;
+            }
+            
+            .social-icon {
+                width: 20px;
+                height: 20px;
+            }
+            
+            .social-icon img {
+                width: 16px;
+            }
+        }
+header{
+    width: 100%;
+    height: 703px;
+    background-image: url(https://img.freepik.com/vecteurs-libre/technologie-abstraite-fond-vert_1035-17926.jpg?semt=ais_hybrid&w=740);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 80px;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    justify-items: center;
+}
+.container_header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.logo{
+padding-top: 30px;
+}
+.logo img{
+    width: 200px;
+}
+.logo p{
+    color: white;
+    letter-spacing: 4.9px ;
+}
+.icons_sociaux{
+display: flex;
+margin-top: 50px;
+}
+.icons_sociaux a {
+    width: 25px !important;
+    height: 25px !important;
+    border: 2px solid #e3a808;
+    border-radius: 50%;
+    margin: 0 10px !important;
+}
+.icons_sociaux a img{
+    width: 20px !important;
+    margin-bottom: 10px !important;
+    margin-left: px !important;
+}
+
+.text_container{
+    justify-items: center;
+    margin-top: 100px;
+}
+/* Styles pour le menu */
+
+header .header .menu {
+    width: 50%;
+    justify-items: center;
+    height: 60px;
+    margin-top: 40px;
+    background-color: #023100;
+    background-image: url(../images/background\ header.png);
+    box-shadow: 0px 6px 9px 1px rgb(0, 0, 0);
+    position: relative; /* Pour positionner l'icône hamburger */
+}
+
+/* Icône Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 22px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.hamburger div {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Menu UL */
+header .header .menu ul {
+    display: flex;
+}
+header .header .menu ul li {
+    margin: 0 20px;
+    margin-top: 20px;
+    display: inline;
+}
+header .header .menu ul li select {
+    background: none;
+    color: white;
+    border: none;
+}
+header .header .menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+/* Container principal */
+.text_container {
+    justify-items: center;
+    margin-top: -400px;
+}
+
+/* Titres et texte */
+.text_container h2 {
+    color: white;
+    position: relative;
+    left: -185px;
+    letter-spacing: 12px;
+    margin-bottom: 10px;
+}
+
+.text_container h1 {
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 130px; /* Taille par défaut */
+    color: #e3a808;
+    margin-top: -30px;
+}
+
+.text_container p {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* Bouton DONATE */
+.text_container .donate {
+    justify-content: center;
+}
+
+.text_container .donate a button {
+    background-color: transparent;
+    border: 1px solid #e3a808;
+    color: #ffffff;
+    width: 170px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Section Contact */
+.contact {
+    width: 80px;
+    height: 100px;
+    margin: 15px;
+}
+
+.contact a {
+    padding: 5px;
+    background-color: #023100;
+    border-radius: 100%;
+}
+
+.contact img {
+    margin: 0 5px;
+    width: 12px;
+}
+/* Section principale */
+.about {
+    width: 100%;
+    height: auto; /* Ajuste automatiquement la hauteur */
+    display: flex;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+
+
+/* Box (conteneur individuel) */
+.about .box {
+    width: 25%; /* Taille par défaut */
+    overflow: hidden;
+    justify-items: center;
+    margin-top: 0px;
+    padding: 10px;
+}
+#box_4{
+    padding-right: 30px;
+}
+
+/* Images */
+.about .box img {
+    width: 100px; /* Taille par défaut */
+}
+
+/* Titres */
+.about .box h3 {
+    color: #023100;
+    margin: 10px;
+    font-family: "Roboto";
+}
+
+/* Paragraphes */
+.about .box p {
+    color: rgb(80, 80, 80);
+    text-align: justify;
+}
+
+
+
+
+
+.activites{
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(255, 255, 255);
+}
+.activites .images_princ{
+    width: 100%;
+    height: 450px;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+.activites .images_princ .backgr{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    text-align: center;
+}
+.activites .images_princ .backgr h2{
+    color: #e3a808;
+    font-size: 100px;
+    letter-spacing: 5px;
+    font-family: "Bebas Neue";
+    padding-top: 8%;
+}
+.activites .images_princ .backgr p{
+    color: #999898;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.activites .images_princ .backgr a button{
+    width: 190px;
+    height: 40px;
+    background-color: #e3a808;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+}
+.evenement_images{
+    display: flex;
+    width: 100%;
+    height: 640px;
+    padding: 20px;
+    margin-bottom: 70px;
+}
+
+.evenement_images .image1{
+    width: 25%;
+    height: 200px;
+    margin-bottom: 20px; /* Ajoute de l'espace en bas pour le responsive */
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    justify-content: space-between;
+    text-align: center; /* Centrer le texte */
+    margin: 10px;
+}
+#image1{
+    margin-right: 20px;
+}
+
+.evenement_images .image1 img{
+    width: 100%;
+    height: 100%; /* Limite la taille de l'image pour plus de place au texte */
+    object-fit: cover;
+}
+
+.evenement_images .image1 h3{
+    color: #023100;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.evenement_images .image1 p{
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.5;
+    height: 30%; /* Limite la hauteur du texte pour permettre un défilement */
+}
+
+
+
+
+.video{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    background: linear-gradient(to bottom, #e3a808, #e3a808, #e3a808, #023100);
+    border-bottom: 5px solid black;
+    justify-content: space-between; /* Aligne les éléments horizontalement avec de l'espace */
+    
+}
+
+.video video{
+    width: 47%;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.video_right{
+    width: 50%;
+    padding: 20px;
+    padding-top: 45px;
+}
+
+.video_right h3{
+    color: #023100;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.video_right p{
+    color: #000000;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+
+.news{
+    width: 100%;
+    height: auto; /* Permet à la section de s'ajuster automatiquement */
+}
+
+.title_news h2{
+    text-align: center;
+    font-size: 90px;
+    font-family: "Bebas Neue";
+    color: #e3a808;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Style de base pour les membres */
+.news .members{
+    display: flex;
+    flex-wrap: wrap; /* Permet de faire passer les boxes sur plusieurs lignes si nécessaire */
+    justify-content: center; /* Centre les éléments */
+    margin-top: 30px;
+}
+
+.news .members .box{
+    display: flex;
+    flex-direction: column; /* Aligne les éléments (image, titre, texte) verticalement */
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    width: 200px; /* Définit une largeur fixe pour chaque box */
+    text-align: center; /* Centre le texte */
+}
+
+.news .members .box img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Espace entre l'image et le texte */
+}
+
+.news .members .box h3{
+    margin: 10px;
+    color: #023100;
+    font-size: 18px; /* Taille du titre */
+}
+
+.news .members .box p{
+    text-align: justify;
+    font-size: 14px; /* Taille du texte */
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+
+
+.galery_container {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background: linear-gradient(to right, #023100, #023100);
+}
+
+.slider {
+    margin-top: 25px;
+    display: flex;
+    width: calc(150px * 10); /* Largeur totale pour toutes les images */
+    animation: defilement 20s linear infinite;
+}
+
+.slider img {
+    width: 450px; /* Taille par défaut des images */
+    height: auto;
+    margin-right: 20px; /* Espacement entre les images */
+}
+
+/* Animation de défilement des images */
+@keyframes defilement {
+    from {
+        transform: translateX(2%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+/* Style de base pour la newsletter */
+.newsletter-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Couleur de fond */
+    padding: 50px 0;
+    z-index: 1;
+}
+
+.newsletter-content {
+    width: 80%;
+    max-width: 600px; /* Limite la largeur pour éviter qu'il devienne trop large */
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-title {
+    font-size: 36px;
+    color: #023100;
+    margin-bottom: 20px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.newsletter-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.newsletter-form input {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.newsletter-form button {
+    width: 80%;
+    padding: 12px;
+    background-color: #e3a808;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #d18b07;
+}
+
+
+
+      /* Pied de page */
+/* Style de base pour le footer */
+footer {
+    width: 100%;
+    background-color: #222;
+    color: #bbb;
+    padding: 40px 0 10px 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.footer-links,
+.footer-social,
+.footer-certification {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 30px;
+}
+
+.footer-links h3,
+.footer-social h3,
+.footer-certification h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #e3a808;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #bbb;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
+
+.footer-social a i img {
+    width: 25px;
+    height: auto;
+}
+
+.footer-certification {
+    text-align: right;
+}
+
+.footer-certification img {
+    width: 120px;
+    height: auto;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #bbb;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+      /* Bouton pour remonter en haut */
+#scrollToTopBtn {
+    display: none; /* Caché par défaut */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #db7807;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;
+}
+
+/* Media query pour les petits écrans */
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+    header {
+        width: 100%;
+        height: 100vh; /* Prend la totalité de la hauteur de l'écran */
+        flex-direction: column; /* Si vous utilisez flexbox */
+    }
+    header div.header {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    header div.header .container_header .logo img {
+        width: 100px;
+    }
+    header div.header .container_header .logo p {
+        font-size: 5.5px;
+    }
+    header div.header .container_header .icons_sociaux {
+        margin-top: 35px;
+    }
+    header div.header .container_header .icons_sociaux a {
+        width: 18px;
+        height: 18px;
+        margin: 5px;
+        border: 1px solid #e3a808;
+    }
+    header div.header .container_header .icons_sociaux a img {
+        width: 14px;
+        margin: 1.5px;
+    }
+    header div.header div.menu {
+        width: 60%;
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Affichage de l'icône hamburger */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Masquer le menu par défaut */
+    header .header .menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: #023100;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0px 6px 9px 1px rgb(0, 0, 0);
+        padding: 20px 0;
+    }
+    header .header .menu {
+        position: relative;
+        justify-items: center;
+        height: 30px;
+    }
+
+    /* Afficher le menu lorsque l'icône hamburger est activée */
+    header .header .menu ul.active {
+        display: flex;
+    }
+
+    /* Centrer les liens */
+    header .header .menu ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Media query pour écrans de taille max 375px x 667px */
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+    /* Container principal */
+    .text_container {
+        padding: 10px; /* Ajoute de l'espacement */
+    }
+
+    /* Titres */
+    .text_container h2 {
+        font-size: 18px; /* Plus petit */
+        letter-spacing: 4px; /* Réduit l'espacement */
+    }
+
+    .text_container h1 {
+        font-size: 50px; /* Plus petit */
+        margin-top: 50px; /* Réajuste la marge */
+    }
+
+    /* Texte */
+    .text_container p {
+        font-size: 14px; /* Texte plus lisible sur un petit écran */
+        line-height: 1.5; /* Ajoute de l'espacement entre les lignes */
+    }
+
+    /* Bouton DONATE */
+    .text_container .donate {
+        width: 100%; /* Adapte la largeur */
+        text-align: center;
+    }
+
+    .text_container .donate a button {
+        width: 120px; /* Taille réduite */
+        height: 35px;
+        font-size: 12px;
+    }
+
+    /* Section Contact */
+    .contact {
+        width: auto;
+        height: auto;
+        margin: 5px auto; /* Centre les icônes */
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact a {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .contact img {
+        width: 15px; /* Agrandit légèrement pour meilleure visibilité */
+        height: 15px; /* Ajuste la hauteur */
+        padding-top: 3px;
+
+    }
+}
+/* Media query pour écrans max 375px x 667px */
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+    /* Section principale */
+    .about {
+        flex-direction: column; /* Empile les boîtes verticalement */
+        align-items: center; /* Centre les boîtes */
+        overflow: hidden;
+    }
+
+    /* Box (conteneur individuel) */
+    .about .box {
+        width: 80%; /* Plus large pour occuper la majorité de l'écran */
+        padding: 15px; /* Réduit les marges */
+    }
+
+    #box_4 {
+        padding: 0; /* Enlève le padding droit pour harmoniser */
+    }
+
+    /* Images */
+    .about .box img {
+        width: 70px; /* Réduit la taille des images */
+        margin-bottom: 10px; /* Ajoute un espace en dessous de l'image */
+    }
+
+    /* Titres */
+    .about .box h3 {
+        font-size: 18px; /* Réduit la taille */
+        text-align: center; /* Centre le texte */
+        margin: 5px 0;
+    }
+
+    /* Paragraphes */
+    .about .box p {
+        font-size: 14px; /* Réduit la taille */
+        line-height: 1.5; /* Espacement entre les lignes pour la lisibilité */
+        margin: 10px 0;
+    }
+}
+/* Media Query pour écrans plus petits */
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+    .activites {
+        height: 250px; /* Réduit la hauteur du container */
+        overflow: hidden;
+    }
+
+    .activites .images_princ {
+        height: 250px; /* Ajuste la hauteur de l'image */
+    }
+
+    .activites .images_princ .backgr h2 {
+        font-size: 40px; /* Réduit la taille du titre */
+        letter-spacing: 2px; /* Réduit l'espacement des lettres */
+    }
+
+    .activites .images_princ .backgr p {
+        font-size: 14px; /* Réduit la taille du texte du paragraphe */
+        margin: 10px auto; /* Ajoute un espacement modéré */
+        width: 90%; /* Limite la largeur du texte */
+    }
+
+    .activites .images_princ .backgr a button {
+        width: 160px; /* Réduit la largeur du bouton */
+        height: 35px; /* Réduit la hauteur du bouton */
+        font-size: 14px; /* Réduit la taille de la police du bouton */
+    }
+}
+/* Media Query pour écran mobile  */
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+    .evenement_images{
+        width: 100%;
+        flex-direction: column; /* Passe les éléments en colonne sur les petits écrans */
+        height: auto; /* La hauteur devient auto pour permettre le redimensionnement */
+        overflow: hidden;
+    }
+
+    .evenement_images .image1{
+        width: 90%; /* Occupe 90% de la largeur du container */
+        height: auto; /* Permet à l'élément de se redimensionner */
+        margin-bottom: 20px;
+        margin: 20px;
+    }
+
+    .evenement_images .image1 h3{
+        font-size: 16px; /* Réduit la taille du titre */
+    }
+
+    .evenement_images .image1 p{
+        font-size: 12px; /* Réduit la taille du texte du paragraphe */
+        height: auto; /* Le texte peut occuper toute la hauteur disponible */
+    }
+
+    .evenement_images .image1 img{
+        height: 50%; /* Réduit la hauteur de l'image pour laisser plus de place au texte */
+    }
+}
+/* Media Query pour écran mobile */
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+    .video{
+        flex-direction: column; /* Passe les éléments en colonne sur les petits écrans */
+        height: auto; /* Permet un redimensionnement automatique de la hauteur */
+        overflow: hidden;
+
+    }
+
+    .video video{
+        margin-top: 10px;
+        margin: 20px;
+        width: 100%; /* La vidéo occupe 100% de la largeur */
+        height: auto; /* Permet à la vidéo de s'ajuster automatiquement */
+        margin-bottom: 20px; /* Ajoute un peu d'espace en bas */
+    }
+
+    .video_right{
+        width: 90%; /* La section de texte occupe 90% de la largeur */
+        padding-top: 20px;
+        text-align: center; /* Centre le texte sur les petits écrans */
+        
+    }
+
+    .video_right h3{
+        font-size: 18px; /* Réduit la taille du titre */
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    .video_right p{
+        font-size: 12px; /* Réduit la taille du texte du paragraphe */
+        line-height: 1.4; /* Ajuste la hauteur de ligne pour améliorer la lisibilité */
+        overflow-y: auto; /* Permet le défilement vertical du texte s'il est trop long */
+        height: auto; /* Permet au texte de prendre toute la place nécessaire */
+        margin-left: -10px;
+        
+    }
+}
+/* Media query pour les écrans mobiles  */
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+    .title_news h2 {
+        font-size: 30px; /* Réduit la taille du titre */
+        letter-spacing: 2px; /* Réduit l'espacement des lettres */
+        margin-top: 10px;
+    }
+
+    .news .members {
+        flex-direction: column; /* Les éléments de la section sont disposés en colonne */
+        align-items: center; /* Centre les boxes */
+    }
+
+    .news .members .box {
+        width: 80%; /* La largeur des boxes est réduite pour occuper 80% de l'écran */
+        margin-right: 0; /* Supprime l'espacement à droite */
+        margin-bottom: 15px; /* Espace entre chaque box */
+    }
+
+    .news .members .box img {
+        width: 100px; /* Réduit la taille de l'image */
+        height: 100px; /* Réduit la hauteur de l'image */
+    }
+
+    .news .members .box h3 {
+        font-size: 16px; /* Réduit la taille du titre */
+    }
+
+    .news .members .box p {
+        font-size: 12px; /* Réduit la taille du texte */
+        line-height: 1.4;
+    }
+}
+/* Media Query pour les petits écrans  */
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+    .galery_container {
+        height: 185px; /* Réduire la hauteur du conteneur sur petits écrans */
+    }
+
+    .slider {
+        margin-top: 10px; /* Réduire la marge au-dessus du slider */
+        width: 200%; /* Permet de faire défiler les images sur tout l'écran */
+        animation: defilement 15s linear infinite; /* Accélérer l'animation pour que l'effet soit plus rapide sur petit écran */
+    }
+
+    .slider img {
+        width: 250px; /* Réduire la taille des images pour qu'elles tiennent sur l'écran */
+        height: auto;
+        margin-right: 10px; /* Réduire l'espacement entre les images */
+    }
+
+    /* Optionnel : Modifier la vitesse du défilement */
+    @keyframes defilement {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%); /* Défilement plus rapide et fluide */
+        }
+    }
+}
+/* Media query pour les écrans mobiles (max-width: 375px et max-height: 667px) */
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+    .newsletter-content {
+        width: 90%; /* Prend plus de largeur sur les petits écrans */
+        padding: 20px;
+    }
+
+    .newsletter-title {
+        font-size: 24px; /* Réduit la taille du titre */
+        margin-bottom: 15px;
+    }
+
+    .newsletter-text {
+        font-size: 14px; /* Réduit la taille du texte */
+        margin-bottom: 20px;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 90%; /* Augmente la largeur des champs et boutons */
+        padding: 10px; /* Réduit le padding */
+        font-size: 14px; /* Réduit la taille du texte */
+    }
+
+    .newsletter-form input {
+        margin-bottom: 10px; /* Espacement réduit entre le champ de texte et le bouton */
+    }
+
+    .newsletter-form button {
+        font-size: 14px; /* Réduit la taille du texte dans le bouton */
+    }
+}
+/* Media query pour les petits écrans */
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+    .footer-container {
+        flex-direction: column; /* Stack les sections les unes sous les autres */
+        align-items: center; /* Centrer les éléments */
+    }
+
+    .footer-links,
+    .footer-social,
+    .footer-certification {
+        min-width: 100%; /* Les sections prennent toute la largeur disponible */
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .footer-links h3,
+    .footer-social h3,
+    .footer-certification h3 {
+        font-size: 1rem; /* Réduire la taille des titres */
+    }
+
+    .footer-links ul li {
+        margin-bottom: 8px; /* Réduction de l'espacement entre les liens */
+    }
+
+    .footer-links ul li a {
+        font-size: 0.9rem; /* Réduction de la taille de police pour les liens */
+    }
+
+    .footer-social a {
+        margin: 0 5px; /* Réduction de l'espacement entre les icônes */
+    }
+
+    .footer-social a i img {
+        width: 20px; /* Réduction de la taille des icônes */
+    }
+
+    .footer-certification img {
+        width: 100px; /* Réduction de la taille de l'image de certification */
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem; /* Réduction de la taille de texte des mentions légales */
+    }
+}
+
+
+
+
+@media only screen and (max-width: 414px) and (max-height: 896px),
+only screen and (max-width: 430px) and (max-height: 932px),
+only screen and (max-width: 540px) and (max-height: 720px),
+only screen and (max-width: 768px) and (max-height: 1024px) {
+ header {
+   width: 100%;
+   height: 667px;
+   flex-direction: column; /* If using flexbox */
+ }
+ header div.header{
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+ }
+ header div.header .container_header .logo img{
+     width: 100px;
+ }
+ header div.header .container_header .logo p{
+     font-size: 5.5px;
+ }
+ header div.header .container_header .icons_sociaux{
+     margin-top: 35px;
+ }
+ header div.header .container_header .icons_sociaux a{
+     width: 18px;
+     height: 18px;
+     margin: 5px;
+     border: 1px solid #e3a808;
+ }
+ header div.header .container_header .icons_sociaux a img{
+     width:14px;
+     margin: 1.5px;
+ }
+ header div.header .menu{
+     width: 60%;
+     margin-top: 50px;
+ }
+ div.logo p{
+     letter-spacing: 4.9px;
+ }
+}@media only screen and (max-width: 414px) and (max-height: 896px),
+only screen and (max-width: 430px) and (max-height: 932px),
+only screen and (max-width: 540px) and (max-height: 720px) {
+    /* Container principal */
+    .text_container {
+        padding: 10px; /* Ajoute de l'espacement */
+    }
+
+    /* Titres */
+    .text_container h2 {
+        font-size: 18px; /* Plus petit */
+        letter-spacing: 4px; /* Réduit l'espacement */
+        bottom: -10px;
+        margin-left: 69%;
+    }
+
+    .text_container h1 {
+        font-size: 50px; /* Plus petit */
+        margin-top: 0; /* Réajuste la marge */
+    }
+
+    /* Texte */
+    .text_container p {
+        font-size: 14px; /* Texte plus lisible sur un petit écran */
+        line-height: 1.5; /* Ajoute de l'espacement entre les lignes */
+    }
+
+    /* Bouton DONATE */
+    .text_container .donate {
+        width: 100%; /* Adapte la largeur */
+        text-align: center;
+    }
+
+    .text_container .donate a button {
+        width: 120px; /* Taille réduite */
+        height: 35px;
+        font-size: 12px;
+    }
+
+    /* Section Contact */
+    .contact {
+        width: auto;
+        height: auto;
+        margin: 5px auto; /* Centre les icônes */
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact a {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .contact img {
+        width: 15px; /* Agrandit légèrement pour meilleure visibilité */
+        height: 15px; /* Ajuste la hauteur */
+        padding-top: 3px;
+
+    }
+}
+@media only screen and (max-width: 414px) and (max-height: 896px),
+only screen and (max-width: 430px) and (max-height: 932px),
+only screen and (max-width: 540px) and (max-height: 720px) {
+    /* Section principale */
+    .about {
+        flex-direction: column; /* Empile les boîtes verticalement */
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* Box (conteneur individuel) */
+    .about .box {
+        width: 90%; /* Plus large pour occuper la majorité de l'écran */
+        padding: 15px; /* Réduit les marges */
+       
+    }
+
+    #box_4 {
+        padding-right: 0; /* Enlève le padding droit pour harmoniser */
+    }
+
+    /* Images */
+    .about .box img {
+        width: 70px; /* Réduit la taille des images */
+        margin-bottom: 10px; /* Ajoute un espace en dessous de l'image */
+    }
+
+    /* Titres */
+    .about .box h3 {
+        font-size: 18px; /* Réduit la taille */
+        text-align: center; /* Centre le texte */
+        margin: 5px 0;
+    }
+
+    /* Paragraphes */
+    .about .box p {
+        font-size: 14px; /* Réduit la taille */
+        line-height: 1.5; /* Espacement entre les lignes pour la lisibilité */
+        margin: 15px 0;
+    }
+}
+@media only screen and (max-width: 414px) and (max-height: 896px),
+only screen and (max-width: 430px) and (max-height: 932px),
+only screen and (max-width: 540px) and (max-height: 720px),
+only screen and (max-width: 768px) and (max-height: 1024px) {
+    .activites {
+        height: 250px; /* Réduit la hauteur du container */
+        overflow: hidden;
+    }
+
+    .activites .images_princ {
+        height: 250px; /* Ajuste la hauteur de l'image */
+    }
+
+    .activites .images_princ .backgr h2 {
+        font-size: 40px; /* Réduit la taille du titre */
+        letter-spacing: 2px; /* Réduit l'espacement des lettres */
+    }
+
+    .activites .images_princ .backgr p {
+        font-size: 14px; /* Réduit la taille du texte du paragraphe */
+        margin: 10px auto; /* Ajoute un espacement modéré */
+        width: 100%; /* Limite la largeur du texte */
+    }
+
+    .activites .images_princ .backgr a button {
+        width: 160px; /* Réduit la largeur du bouton */
+        height: 35px; /* Réduit la hauteur du bouton */
+        font-size: 14px; /* Réduit la taille de la police du bouton */
+    }
+}
+@media only screen and (max-width: 414px) and (max-height: 896px),
+only screen and (max-width: 430px) and (max-height: 932px),
+only screen and (max-width: 540px) and (max-height: 720px),
+only screen and (max-width: 768px) and (max-height: 1024px) {
+    .evenement_images{
+        width: 100%;
+        flex-direction: column; /* Passe les éléments en colonne sur les petits écrans */
+        height: auto; /* La hauteur devient auto pour permettre le redimensionnement */
+        overflow: hidden;
+    }
+
+    .evenement_images .image1{
+        width: 90%; /* Occupe 90% de la largeur du container */
+        height: auto; /* Permet à l'élément de se redimensionner */
+        margin-bottom: 20px;
+       
+    }
+
+    .evenement_images .image1 h3{
+        font-size: 16px; /* Réduit la taille du titre */
+    }
+
+    .evenement_images .image1 p{
+        font-size: 12px; /* Réduit la taille du texte du paragraphe */
+        height: auto; /* Le texte peut occuper toute la hauteur disponible */
+    }
+
+    .evenement_images .image1 img{
+        height: 50%; /* Réduit la hauteur de l'image pour laisser plus de place au texte */
+    }
+}
+@media only screen and (max-width: 414px) and (max-height: 896px),
+only screen and (max-width: 430px) and (max-height: 932px),
+only screen and (max-width: 540px) and (max-height: 720px),
+only screen and (max-width: 768px) and (max-height: 1024px) {
+    .video{
+        flex-direction: column; /* Passe les éléments en colonne sur les petits écrans */
+        height: auto; /* Permet un redimensionnement automatique de la hauteur */
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .video video{
+        margin-top: 10px;
+        width: 90%; /* La vidéo occupe 90% de la largeur */
+        height: auto; /* Permet à la vidéo de s'ajuster automatiquement */
+        margin-bottom: 20px; /* Ajoute un peu d'espace en bas */
+
+    }
+
+    .video_right{
+        width: 90%; /* La section de texte occupe 90% de la largeur */
+        padding: 20px;
+        padding-top: 15px;
+        text-align: center; /* Centre le texte sur les petits écrans */
+        margin-left: 10px;
+    }
+
+    .video_right h3{
+        font-size: 18px; /* Réduit la taille du titre */
+        padding-bottom: 5px;
+    }
+
+    .video_right p{
+        font-size: 12px; /* Réduit la taille du texte du paragraphe */
+        line-height: 1.4; /* Ajuste la hauteur de ligne pour améliorer la lisibilité */
+        overflow-y: auto; /* Permet le défilement vertical du texte s'il est trop long */
+        height: auto; /* Permet au texte de prendre toute la place nécessaire */
+    }
+}
+@media only screen and (max-width: 414px) and (max-height: 896px),
+only screen and (max-width: 430px) and (max-height: 932px),
+only screen and (max-width: 540px) and (max-height: 720px),
+only screen and (max-width: 768px) and (max-height: 1024px) {
+    .title_news h2 {
+        font-size: 30px; /* Réduit la taille du titre */
+        letter-spacing: 2px; /* Réduit l'espacement des lettres */
+        margin-top: 10px;
+    }
+
+    .news .members {
+        flex-direction: column; /* Les éléments de la section sont disposés en colonne */
+        align-items: center; /* Centre les boxes */
+    }
+
+    .news .members .box {
+        width: 80%; /* La largeur des boxes est réduite pour occuper 80% de l'écran */
+        margin-right: 0; /* Supprime l'espacement à droite */
+        margin-bottom: 15px; /* Espace entre chaque box */
+    }
+
+    .news .members .box img {
+        width: 100px; /* Réduit la taille de l'image */
+        height: 100px; /* Réduit la hauteur de l'image */
+    }
+
+    .news .members .box h3 {
+        font-size: 16px; /* Réduit la taille du titre */
+    }
+
+    .news .members .box p {
+        font-size: 12px; /* Réduit la taille du texte */
+        line-height: 1.4;
+    }
+}
+@media only screen and (max-width: 414px) and (max-height: 896px),
+only screen and (max-width: 430px) and (max-height: 932px),
+only screen and (max-width: 540px) and (max-height: 720px),
+only screen and (max-width: 768px) and (max-height: 1024px) {
+    .galery_container {
+        height: 185px; /* Réduire la hauteur du conteneur sur petits écrans */
+    }
+
+    .slider {
+        margin-top: 10px; /* Réduire la marge au-dessus du slider */
+        width: 200%; /* Permet de faire défiler les images sur tout l'écran */
+        animation: defilement 15s linear infinite; /* Accélérer l'animation pour que l'effet soit plus rapide sur petit écran */
+    }
+
+    .slider img {
+        width: 250px; /* Réduire la taille des images pour qu'elles tiennent sur l'écran */
+        height: auto;
+        margin-right: 10px; /* Réduire l'espacement entre les images */
+    }
+
+    /* Optionnel : Modifier la vitesse du défilement */
+    @keyframes defilement {
+        from {
+            transform: translateX(2%);
+        }
+        to {
+            transform: translateX(-50%); /* Défilement plus rapide et fluide */
+        }
+    }
+}
+@media only screen and (max-width: 414px) and (max-height: 896px),
+only screen and (max-width: 430px) and (max-height: 932px),
+only screen and (max-width: 540px) and (max-height: 720px),
+only screen and (max-width: 768px) and (max-height: 1024px) {
+    .newsletter-content {
+        width: 100%; /* Prend plus de largeur sur les petits écrans */
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .newsletter-title {
+        font-size: 24px; /* Réduit la taille du titre */
+        margin-bottom: 15px;
+    }
+
+    .newsletter-text {
+        font-size: 14px; /* Réduit la taille du texte */
+        margin-bottom: 20px;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 90%; /* Augmente la largeur des champs et boutons */
+        padding: 10px; /* Réduit le padding */
+        font-size: 14px; /* Réduit la taille du texte */
+    }
+
+    .newsletter-form input {
+        margin-bottom: 10px; /* Espacement réduit entre le champ de texte et le bouton */
+    }
+
+    .newsletter-form button {
+        font-size: 14px; /* Réduit la taille du texte dans le bouton */
+    }
+}
+@media only screen and (max-width: 414px) and (max-height: 896px),
+only screen and (max-width: 430px) and (max-height: 932px),
+only screen and (max-width: 540px) and (max-height: 720px),
+only screen and (max-width: 768px) and (max-height: 1024px) {
+    .footer-container {
+        flex-direction: column; /* Stack les sections les unes sous les autres */
+        align-items: center; /* Centrer les éléments */
+    }
+
+    .footer-links,
+    .footer-social,
+    .footer-certification {
+        min-width: 100%; /* Les sections prennent toute la largeur disponible */
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .footer-links h3,
+    .footer-social h3,
+    .footer-certification h3 {
+        font-size: 1rem; /* Réduire la taille des titres */
+    }
+
+    .footer-links ul li {
+        margin-bottom: 8px; /* Réduction de l'espacement entre les liens */
+    }
+
+    .footer-links ul li a {
+        font-size: 0.9rem; /* Réduction de la taille de police pour les liens */
+    }
+
+    .footer-social a {
+        margin: 0 5px; /* Réduction de l'espacement entre les icônes */
+    }
+
+    .footer-social a i img {
+        width: 20px; /* Réduction de la taille des icônes */
+    }
+
+    .footer-certification img {
+        width: 100px; /* Réduction de la taille de l'image de certification */
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem; /* Réduction de la taille de texte des mentions légales */
+    }
+}
+
+/* Media query pour les autres appareils */
+@media only screen and (min-width: 376px) {
+    header {
+        width: 100%;
+        height: 100vh; /* Prend la totalité de la hauteur de l'écran */
+        flex-direction: column; /* Si vous utilisez flexbox */
+    }
+    header div.header {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    header div.header .container_header .logo img {
+        width: 100px;
+    }
+    header div.header .container_header .logo p {
+        font-size: 5.5px;
+    }
+    header div.header .container_header .icons_sociaux {
+        margin-top: 35px;
+    }
+    header div.header .container_header .icons_sociaux a {
+        width: 18px;
+        height: 18px;
+        margin: 5px;
+        border: 1px solid #e3a808;
+    }
+    header div.header .container_header .icons_sociaux a img {
+        width: 14px;
+        margin: 1.5px;
+    }
+}
+
+ /* iPhone SE (1ère génération) et iPhone 5 */
+ @media only screen and (max-width: 320px) {
+    body {
+        font-size: 14px;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .header .logo img {
+        width: 80px;
+    }
+    .header .icons_sociaux a {
+        width: 16px;
+        height: 16px;
+    }
+    .header .icons_sociaux a img {
+        width: 12px;
+    }
+    .box {
+        padding: 10px;
+    }
+}
+
+/* iPhone 6/7/8 */
+@media only screen and (max-width: 375px) {
+    body {
+        font-size: 15px;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .header .logo img {
+        width: 100px;
+    }
+    .header .icons_sociaux a {
+        width: 18px;
+        height: 18px;
+    }
+    .header .icons_sociaux a img {
+        width: 14px;
+    }
+    .box {
+        padding: 15px;
+    }
+}
+
+/* iPhone 6/7/8 Plus */
+@media only screen and (max-width: 414px) {
+    body {
+        font-size: 16px;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .header .logo img {
+        width: 120px;
+    }
+    .header .icons_sociaux a {
+        width: 20px;
+        height: 20px;
+    }
+    .header .icons_sociaux a img {
+        width: 16px;
+    }
+    .box {
+        padding: 20px;
+    }
+}
+
+/* iPhone X/XS/11 Pro */
+@media only screen and (max-width: 375px) and (min-device-pixel-ratio: 3) {
+    body {
+        font-size: 15px;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .header .logo img {
+        width: 100px;
+    }
+    .header .icons_sociaux a {
+        width: 18px;
+        height: 18px;
+    }
+    .header .icons_sociaux a img {
+        width: 14px;
+    }
+    .box {
+        padding: 15px;
+    }
+}
+
+/* iPhone XR/11 */
+@media only screen and (max-width: 414px) and (min-device-pixel-ratio: 2) {
+    body {
+        font-size: 16px;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .header .logo img {
+        width: 120px;
+    }
+    .header .icons_sociaux a {
+        width: 20px;
+        height: 20px;
+    }
+    .header .icons_sociaux a img {
+        width: 16px;
+    }
+    .box {
+        padding: 20px;
+    }
+}
+
+/* iPhone 12/12 Pro */
+@media only screen and (max-width: 390px) and (min-device-pixel-ratio: 3) {
+    body {
+        font-size: 15px;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .header .logo img {
+        width: 110px;
+    }
+    .header .icons_sociaux a {
+        width: 18px;
+        height: 18px;
+    }
+    .header .icons_sociaux a img {
+        width: 14px;
+    }
+    .box {
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 1080px) and (min-height: 2460px) {
+    header .header .menu {
+        width: auto;
+        top: 150px;
+    }
+    div.menu ul {
+        padding: 5px;
+    }
+    .text_container {
+        margin-top: -1050px;
+    }
+    .about {
+        height: 480px;
+    }
+    .activites {
+        height: 480px;
+    }
+    .backgr {
+        height: 480px;
+    }
+    .evenement_images {
+        height: 850px;
+    }
+    .video {
+        height: 650px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="container_header">
+                <div class="logo">
+                    <img src="icon/thumbnail_LOGO_MAKAYA_023_png.png" alt="logo makaya" id="logo-img">
+                    <p id="logo-text">AN N ANGAJE N</p>
+                </div>
+                <div class="icons_sociaux">
+                    <a href="#" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/042/148/632/non_2x/instagram-logo-instagram-social-media-icon-free-png.png" alt="Instagram"></a>
+                    <a href="#" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="https://images.icon-icons.com/4029/PNG/512/twitter_x_new_logo_x_rounded_icon_256078.png" alt="Twitter"></a>
+                </div>
+            </div>
+
+            <!-- Menu -->
+            <div class="menu">
+                <!-- Icône Hamburger -->
+                <div class="hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <!-- Liste des liens -->
+                <ul id="menu-list">
+                    <li><a href="/" id="home">ACCUEIL</a></li>
+                    <li><a href="#about">À PROPOS</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
+                    <li><a href="/admin">ADMIN</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text_container">
+            <h2 data-aos="fade-right" data-aos-delay="100" id="site-title-header">MAKAYA</h2>
+            <h1 data-aos="zoom-in-right" data-aos-delay="200" id="main-title">AN N ANGAJE N</h1>
+            <p data-aos="fade-right" data-aos-delay="300" id="main-subtitle">Chargement...</p>
+            <div class="donate" data-aos="fade-right" data-aos-delay="400">
+                <a href="#" target="_blank" id="donate-link"><button>NOUS SOUTENIR</button></a>
+            </div>
+            <div class="contact">
+                <a href="mailto:" id="contact-email"><img src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/red-mail-icon.png" alt="Email"></a>
+                <a href="tel:" id="contact-phone"><img src="https://images.vexels.com/media/users/3/205069/isolated/preview/f207045d96c258fed664305f0ac2c5bd-telephone-handset-blue-icon.png?w=360" alt="Phone"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="title_news" data-aos="fade-up" data-aos-delay="200">
+        <h2>Nos Activités</h2>
+    </div>
+
+    <section class="about" data-aos="fade-up" data-aos-delay="200" id="activities-section">
+        <div class="loading"></div>
+    </section>
+
+    <section class="activites" data-aos="fade-up" data-aos-delay="200" id="flyers-section">
+        <!-- Les flyers seront chargés dynamiquement -->
+    </section>
+
+    <div class="title_news" data-aos="fade-up" data-aos-delay="200">
+        <h2>Vivons nos moments<br>inoubliables !</h2>
+    </div>
+
+    <section class="evenement_images" data-aos="fade-up" data-aos-delay="200" id="events-section">
+        <div class="loading">Chargement des événements...</div>
+    </section>
+
+    <section class="video" data-aos="fade-up" data-aos-delay="200" id="video-section">
+        <video id="video" autoplay muted playsinline loop>
+            <source src="video/sample-video.mp4" type="video/mp4">
+        </video>
+        <div class="video_right" data-aos="fade-right" data-aos-delay="500">
+            <h3 id="video-title">Sauvons la planète</h3>
+            <p id="video-text">
+                Notre mission est de créer un impact positif dans notre communauté tout en préservant notre environnement. 
+                Nous croyons qu'ensemble, nous pouvons construire un avenir meilleur pour les générations futures. 
+                Rejoignez-nous dans cette noble mission et participez à nos actions concrètes pour le changement.
+            </p>
+        </div>
+    </section>
+
+    <section class="news" data-aos="fade-up" data-aos-delay="200">
+        <div class="title_news">
+            <h2 id="news-title">Notre Équipe</h2>
+        </div>
+        <div class="members" id="members-section" data-aos="fade-up" data-aos-delay="200">
+            <div class="loading">Chargement de l'équipe...</div>
+        </div>
+        <div class="news-footer" id="news-footer"></div>
+    </section>
+
+    <section class="galery_container" data-aos="fade-up" data-aos-delay="200">
+        
+        <div class="slider" data-aos="zoom-in-left" data-aos-delay="200" id="gallery-section">
+            <div class="loading">Chargement de la galerie...</div>
+        </div>
+        <div class="gallery-description" id="gallery-description"></div>
+    </section>
+
+    <div class="newsletter-container"> 
+        <div class="newsletter-content">
+            <h2 class="newsletter-title" id="newsletter-title">Restez Informés</h2>
+            <p class="newsletter-text" id="newsletter-text">Chargement...</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" placeholder="Votre adresse email" id="newsletter-input" required>
+                <button type="submit" id="newsletter-button">S'INSCRIRE</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-bottom" id="footer-copyright">
+            © 2025 Mon Site. Tous droits réservés.
+        </div>
+    </footer>
+
+    <!-- Bouton pour remonter en haut -->
+    <button id="scrollToTopBtn" title="Retour en haut">↑</button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Configuration du site
+        let siteData = null;
+
+        
+
+        // Fonction pour charger le contenu depuis l'API
+        async function loadContent() {
+            try {
+                console.log('Chargement du contenu depuis /api/content'); // Debug
+                const response = await fetch('/api/content');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                siteData = await response.json();
+                console.log('Données chargées depuis API:', siteData); // Debug
+                
+            } catch (error) {
+                console.error('Erreur lors du chargement depuis API, utilisation des données de fallback:', error);
+                siteData = fallbackData; // Utiliser les données de fallback
+            }
+            
+            // Mettre à jour l'interface avec les données (API ou fallback)
+            updateUI();
+        }
+
+        // Fonction pour mettre à jour l'interface utilisateur
+        function updateUI() {
+            // Mettre à jour le titre de la page
+            document.getElementById('page-title').textContent = siteData.siteTitle || 'Mon Site';
+            
+            // Mettre à jour l'en-tête
+            document.getElementById('site-title-header').textContent = siteData.siteTitle || 'MAKAYA';
+            document.getElementById('main-title').textContent = siteData.mainTitle || 'AN N ANGAJE N';
+            document.getElementById('main-subtitle').innerHTML = siteData.mainSubtitle || 'Chargement...';
+            
+            // Mettre à jour les liens de contact
+            document.getElementById('donate-link').href = siteData.donateLink || '#';
+            document.getElementById('contact-email').href = 'mailto:' + (siteData.contact_email || '');
+            document.getElementById('contact-phone').href = 'tel:' + (siteData.contact_phone || '');
+            
+            // Charger les sections
+            loadActivities();
+            loadFlyers();
+            loadEvents();
+            loadMembers();
+            loadGallery();
+            loadVideo();
+            loadNewsletter();
+            
+            // Mettre à jour le footer
+            document.getElementById('footer-copyright').innerHTML = siteData.footerCopyright || '© 2025 Mon Site. Tous droits réservés.';
+        }
+
+        // Charger les activités
+        function loadActivities() {
+            const activitiesSection = document.getElementById('activities-section');
+            console.log('loadActivities appelée', siteData?.activities); // Debug
+            
+            if (siteData && siteData.activities && siteData.activities.length > 0) {
+                activitiesSection.innerHTML = '';
+                siteData.activities.forEach((activity, index) => {
+                    const activityDiv = document.createElement('div');
+                    activityDiv.className = 'box';
+                    if (index === 3) activityDiv.id = 'box_4'; // Pour le dernier élément
+                    activityDiv.setAttribute('data-aos', 'fade-up');
+                    activityDiv.setAttribute('data-aos-delay', (200 + index * 100).toString());
+                    activityDiv.innerHTML = `
+                        <img src="${activity.img}" alt="${activity.title}" onerror="this.src='https://via.placeholder.com/100x100?text=Image'">
+                        <h3>${activity.title}</h3>
+                        <p>${activity.desc}</p>
+                    `;
+                    activitiesSection.appendChild(activityDiv);
+                });
+                console.log('Activities chargées:', siteData.activities.length); // Debug
+            } else {
+                console.log('Pas d\'activités trouvées ou siteData null'); // Debug
+                activitiesSection.innerHTML = '<div class="loading">Aucune activité disponible</div>';
+            }
+        }
+
+        // Charger les flyers dans la section activites
+        function loadFlyers() {
+            const flyersSection = document.getElementById('flyers-section');
+            if (siteData.flyers && siteData.flyers.length > 0) {
+                flyersSection.innerHTML = `
+                    <div class="images_princ">
+                        <div class="backgr">
+                            <h2>ÉVÉNEMENTS</h2>
+                            <p>Découvrez nos prochains événements</p>
+                            <a href="#"><button>VOIR PLUS</button></a>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // Charger les événements
+        function loadEvents() {
+            const eventsSection = document.getElementById('events-section');
+            if (siteData.evenements && siteData.evenements.length > 0) {
+                eventsSection.innerHTML = '';
+                siteData.evenements.forEach((event, index) => {
+                    const eventDiv = document.createElement('div');
+                    eventDiv.className = 'image1';
+                    if (index === 0) eventDiv.id = 'image1';
+                    eventDiv.setAttribute('data-aos', 'fade-up');
+                    eventDiv.setAttribute('data-aos-delay', '200');
+                    
+                    const imgs = Array.isArray(event.img) ? event.img : [event.img];
+                    const mainImg = imgs[0]; // Prendre la première image
+                    
+                    eventDiv.innerHTML = `
+                        <img src="${mainImg}" alt="Image événement" onerror="this.src='https://via.placeholder.com/350x250?text=Événement'">
+                        <h3>${event.date}</h3>
+                        <p>${event.desc}</p>
+                    `;
+                    eventsSection.appendChild(eventDiv);
+                });
+            }
+        }
+
+        // Charger les membres
+        function loadMembers() {
+            const membersSection = document.getElementById('members-section');
+            document.getElementById('news-title').textContent = siteData.newsTitle || 'Notre Équipe';
+            
+            if (siteData.members && siteData.members.length > 0) {
+                membersSection.innerHTML = '';
+                siteData.members.forEach(member => {
+                    const memberDiv = document.createElement('div');
+                    memberDiv.className = 'box';
+                    memberDiv.setAttribute('data-aos', 'fade-up');
+                    memberDiv.setAttribute('data-aos-delay', '200');
+                    memberDiv.innerHTML = `
+                        <img src="${member.img}" alt="${member.name}" onerror="this.src='https://via.placeholder.com/150x150?text=Photo'">
+                        <h3>${member.name}</h3>
+                        <p>${member.desc}</p>
+                    `;
+                    membersSection.appendChild(memberDiv);
+                });
+            }
+            
+            if (siteData.newsFooter) {
+                document.getElementById('news-footer').innerHTML = siteData.newsFooter;
+            }
+        }
+
+        // Charger la galerie
+        function loadGallery() {
+            const gallerySection = document.getElementById('gallery-section');
+            
+            if (siteData.galleryTitle) {
+                document.getElementById('gallery-title').textContent = siteData.galleryTitle;
+            }
+            
+            if (siteData.galleryDescription) {
+                document.getElementById('gallery-description').textContent = siteData.galleryDescription;
+            }
+            
+            if (siteData.gallery && siteData.gallery.length > 0) {
+                gallerySection.innerHTML = '';
+                siteData.gallery.forEach(img => {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = img;
+                    imgElement.alt = 'Image galerie';
+                    imgElement.setAttribute('data-aos', 'zoom-in-left');
+                    imgElement.setAttribute('data-aos-delay', '200');
+                    imgElement.onerror = function() {
+                        this.src = 'https://via.placeholder.com/450x300?text=Galerie';
+                    };
+                    gallerySection.appendChild(imgElement);
+                });
+            }
+        }
+
+        // Charger la section vidéo
+        function loadVideo() {
+            if (siteData && siteData.videoSection) {
+                const videoSection = siteData.videoSection;
+                
+                // Mettre à jour le titre et le texte
+                document.getElementById('video-title').textContent = videoSection.videoTitle || 'Sauvons la planète';
+                document.getElementById('video-text').textContent = videoSection.videoText || 'Notre mission...';
+                
+                // Gérer la source vidéo
+                const videoElement = document.getElementById('video');
+                const videoSrc = videoSection.videoSrc;
+                
+                if (videoSrc) {
+                    // Vérifier s'il s'agit d'un lien YouTube
+                    if (videoSrc.includes('youtube.com') || videoSrc.includes('youtu.be')) {
+                        // Convertir le lien YouTube en iframe
+                        let videoId = '';
+                        if (videoSrc.includes('youtu.be/')) {
+                            videoId = videoSrc.split('youtu.be/')[1].split('?')[0];
+                        } else if (videoSrc.includes('youtube.com/watch?v=')) {
+                            videoId = videoSrc.split('v=')[1].split('&')[0];
+                        }
+                        
+                        if (videoId) {
+                            // Remplacer la vidéo par un iframe YouTube
+                            const iframe = document.createElement('iframe');
+                            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}`;
+                            iframe.width = videoElement.offsetWidth || '47%';
+                            iframe.height = videoElement.offsetHeight || '100%';
+                            iframe.style.width = '47%';
+                            iframe.style.height = '100%';
+                            iframe.style.marginLeft = '30px';
+                            iframe.frameBorder = '0';
+                            iframe.allow = 'autoplay; encrypted-media';
+                            iframe.allowFullscreen = true;
+                            
+                            // Remplacer l'élément vidéo par l'iframe
+                            videoElement.parentNode.replaceChild(iframe, videoElement);
+                        }
+                    } else {
+                        // Si c'est un fichier vidéo local, mettre à jour la source
+                        const source = videoElement.querySelector('source');
+                        if (source) {
+                            source.src = videoSrc;
+                            videoElement.load(); // Recharger la vidéo avec la nouvelle source
+                        }
+                    }
+                }
+                
+                console.log('Section vidéo chargée:', videoSection); // Debug
+            } else {
+                console.log('Pas de données vidéo trouvées'); // Debug
+            }
+        }
+
+        // Charger la newsletter
+        function loadNewsletter() {
+            document.getElementById('newsletter-title').textContent = siteData.newsletterTitle || 'Restez Informés';
+            document.getElementById('newsletter-text').textContent = siteData.newsletterText || '';
+            document.getElementById('newsletter-input').placeholder = siteData.newsletterPlaceholder || 'Votre adresse email';
+            document.getElementById('newsletter-button').textContent = siteData.newsletterButton || 'S\'INSCRIRE';
+            
+            // Gestionnaire du formulaire newsletter
+            document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = document.getElementById('newsletter-input').value;
+                alert('Merci pour votre inscription ! Email: ' + email);
+                this.reset();
+            });
+        }
+
+        // Initialisation des scripts
+        document.addEventListener('DOMContentLoaded', function() {
+            // Charger le contenu
+            loadContent();
+            
+            // Initialiser AOS
+            AOS.init({
+                duration: 2000,
+                easing: 'ease-in-out',
+                once: false
+            });
+
+            // Menu hamburger
+            const hamburger = document.getElementById('hamburger');
+            const menuList = document.getElementById('menu-list');
+            
+            if (hamburger && menuList) {
+                hamburger.addEventListener('click', () => {
+                    menuList.classList.toggle('active');
+                });
+            }
+
+            // Vérification de l'orientation (désactivé car non utilisé dans ce design)
+            // function checkOrientation() { ... }
+
+            // Bouton retour en haut
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+            if (scrollToTopBtn) {
+                window.onscroll = function() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        scrollToTopBtn.style.display = "block";
+                    } else {
+                        scrollToTopBtn.style.display = "none";
+                    }
+                };
+
+                scrollToTopBtn.addEventListener('click', () => {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                });
+            }
+        });
+    </script>
+</body>
+</html>

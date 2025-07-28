@@ -1,0 +1,172 @@
+{
+  "siteTitle": "MAKAYA",
+  "mainTitle": "an n angaje n",
+  "mainSubtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nemo impedit pariatur sint. <br>Nihil nisi aliquid voluptate dignissimos rem iste.",
+  "donateLink": "https://kinsta.com/fr/blog/pages-a-propos-de-nous/",
+  "activities": [
+    {
+      "img": "https://www.klearminds.com/assets/coaching-image-dreamstime.jpg",
+      "title": "Environement sain",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil illo deleniti sequi rerum nostrum ullam provident laborum at suscipit? Ut odio aspernatur laboriosam ipsa distinctio earum maxime sunt fugiat quod, vel quidem assumenda quis perspiciatis delectus reiciendis dolor id! At illo qui modi impedit dignissimos excepturi id doloremque ex eligendi!"
+    },
+    {
+      "img": "https://www.klearminds.com/assets/coaching-image-dreamstime.jpg",
+      "title": "Coaching",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consequatur ducimus provident magnam voluptas voluptatibus sequi quae in dolor beatae, aut omnis, officia praesentium eligendi quibusdam nesciunt minima porro ex necessitatibus ab recusandae quam numquam tempore! Ducimus, ipsam corrupti, eius saepe non eveniet, perspiciatis cum doloribus totam minus est iste."
+    },
+    {
+      "img": "https://www.klearminds.com/assets/coaching-image-dreamstime.jpg",
+      "title": "Inclusion",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt blanditiis, ipsum odio, sit dolorem atque tenetur ab veniam at, veritatis deleniti porro dolorum quas nemo vel quia nobis repudiandae reprehenderit. Eaque at eveniet ipsum ab perspiciatis, doloribus sit aut asperiores non animi totam sunt cumque exercitationem qui quia eos!"
+    },
+    {
+      "img": "https://www.klearminds.com/assets/coaching-image-dreamstime.jpg",
+      "title": "Motivation personnelle",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem iure maiores ipsa eos illum cumque voluptatibus architecto corporis consequuntur eum labore placeat qui reiciendis nam quod rerum rem, consequatur doloribus sapiente ea! Exercitationem error dolores dignissimos recusandae aut corrupti, totam laudantium labore magnam tempora, molestias, minima sequi repudiandae ducimus velit?"
+    }
+  ],
+  "evenements": [
+    {
+      "img": [
+        "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-6/481207986_563283026744226_75758493091775321_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=E__xN8wr_-AQ7kNvwEF4u43&_nc_oc=Adlb9CVuJ9kGJYyz-6KxNKjeDILm3iPdFkZueNkN0K9qc7pGFBfOc2W7HpMqlx0noRQAI8XcY1NDhTrhKMhCwhY4&_nc_zt=23&_nc_ht=scontent-mia5-1.xx&_nc_gid=SaEVfp1ozsNUQq06EKeKNA&oh=00_AfRqnxmOBiFgk-rV80gowasqwfmXR_g_9RQtlYdRZEbfmw&oe=688AEF29",
+        "../images/Internet_20230920_143811_11.jpg"
+      ],
+      "date": "10 aout 2024",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, obcaecati pariatur. Nesciunt cumque laudantium voluptatibus quod, reiciendis, id amet exercitationem, iure praesentium quo omnis fugiat architecto odit! Totam quia nostrum recusandae, enim inventore officiis molestias, deleniti, <br><br>soluta dignissimos quas optio laboriosam incidunt et aspernatur neque voluptates ipsum delectus maxime! Minus natus est debitis, deserunt eos iste? Nam optio nisi iusto sed quae suscipit ipsa harum, doloremque minima molestias illum nobis, mollitia, fugiat ratione corrupti. Neque nobis molestias esse error accusantium earum debitis animi eveniet quisquam quam reprehenderit facere totam ratione ipsum tempore, harum dicta similique hic laboriosam exercitationem amet. Ratione."
+    },
+    {
+      "img": [
+        "https://scontent-mia5-2.xx.fbcdn.net/v/t39.30808-6/476820793_555138654225330_4998375810472770918_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=g7Qf1Op_byQQ7kNvwEZeJDa&_nc_oc=AdkKA_Ogg8PKeD5O2hV-H8P93SMFn9VfHp25FdvsIHH0vgFGYJ1osIehdicyXprZwlOi7XlMFUnVkVmViKFTK8Uk&_nc_zt=23&_nc_ht=scontent-mia5-2.xx&_nc_gid=n0dEFmzv63dqXGMKlQR3Ng&oh=00_AfTXoxpqv9HdqdNHjipfVC1s6uecwLtXcFZZu5v1RtM6TA&oe=688AF282"
+      ],
+      "date": "26 aout 2024",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, obcaecati pariatur. Nesciunt cumque laudantium voluptatibus quod, reiciendis, id amet exercitationem, iure praesentium quo omnis fugiat architecto odit! Totam quia nostrum recusandae, enim inventore officiis molestias, <br><br>deleniti, soluta dignissimos quas optio laboriosam incidunt et aspernatur neque voluptates ipsum delectus maxime! Minus natus est debitis, deserunt eos iste? Nam optio nisi iusto sed quae suscipit ipsa harum, doloremque minima molestias illum nobis, mollitia, fugiat ratione corrupti. Neque nobis molestias esse error accusantium earum debitis animi eveniet quisquam quam reprehenderit facere totam ratione ipsum tempore, harum dicta similique hic laboriosam exercitationem amet. Ratione."
+    },
+    {
+      "img": [
+        "https://scontent-mia5-2.xx.fbcdn.net/v/t39.30808-6/480792122_563580656714463_6832365727537251791_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=PyN8TRZBiboQ7kNvwFYn-Vk&_nc_oc=Adkco2FZFe4v0hAX4XGUOqaUB5uOz8K033_T3xU56FdT0rKuOlfonxrZid_YwMH9Aqq-V8WQK6ttufnJB07hQtnI&_nc_zt=23&_nc_ht=scontent-mia5-2.xx&_nc_gid=NcI8jGRhik8qpge9ZNIjJw&oh=00_AfRazkoGkwbiLEB6JeVM0qkgaHknjvgj6wKJ2lRwq6haXw&oe=688AF21E"
+      ],
+      "date": "24 septembre 2024",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, obcaecati pariatur. Nesciunt cumque laudantium voluptatibus quod, reiciendis, id amet exercitationem, iure praesentium quo omnis fugiat architecto odit! Totam quia nostrum recusandae, enim inventore officiis molestias, deleniti, soluta <br><br>dignissimos quas optio laboriosam incidunt et aspernatur neque voluptates ipsum delectus maxime! Minus natus est debitis, deserunt eos iste? Nam optio nisi iusto sed quae suscipit ipsa harum, doloremque minima molestias illum nobis, mollitia, fugiat ratione corrupti. Neque nobis molestias esse error accusantium earum debitis animi eveniet quisquam quam reprehenderit facere totam ratione ipsum tempore, harum dicta similique hic laboriosam exercitationem amet. Ratione."
+    },
+    {
+      "img": [
+        "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/480663654_563586313380564_2863350113898813546_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=oHbpxm4owgcQ7kNvwFEmxjt&_nc_oc=Admnjgoz3Hn8ctB11RAqV5-4KmjwrfoR56j73_oFcr7B5x0y3UFFoJcNE8S2jQaW08UlXyC5anEP7y7Oi7VAFMFj&_nc_zt=23&_nc_ht=scontent-mia3-2.xx&_nc_gid=2IS_hl_B_1IhXI4fjzKGYg&oh=00_AfSTf01ptEpxUHwaermhDzlXPzsH8xq2q4kCzYagBsoc9g&oe=688AF5FF"
+      ],
+      "date": "10 decembre 2024",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, obcaecati pariatur. Nesciunt cumque laudantium voluptatibus quod, reiciendis, id amet exercitationem, iure praesentium quo omnis fugiat architecto odit! Totam quia nostrum recusandae, enim inventore officiis molestias, deleniti, soluta dignissimos quas optio laboriosam incidunt et aspernatur neque voluptates <br><br>ipsum delectus maxime! Minus natus est debitis, deserunt eos iste? Nam optio nisi iusto sed quae suscipit ipsa harum, doloremque minima molestias illum nobis, mollitia, fugiat ratione corrupti. Neque nobis molestias esse error accusantium earum debitis animi eveniet quisquam quam reprehenderit facere totam ratione ipsum tempore, harum dicta similique hic laboriosam exercitationem amet. Ratione."
+    }
+  ],
+  "newsTitle": "new members",
+  "newsFooter": "Texte additionnel optionnel sous la section news.",
+  "members": [
+    {
+      "img": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+      "name": "Jean Pierre",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis neque numquam in tempora quis commodi consequuntur reiciendis nam laboriosam."
+    },
+    {
+      "img": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+      "name": "Jean Pierre",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis neque numquam in tempora quis commodi consequuntur reiciendis nam laboriosam."
+    },
+    {
+      "img": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+      "name": "Jean Pierre",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis neque numquam in tempora quis commodi consequuntur reiciendis nam laboriosam."
+    },
+    {
+      "img": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+      "name": "Jean Pierre",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis neque numquam in tempora quis commodi consequuntur reiciendis nam laboriosam."
+    },
+    {
+      "img": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+      "name": "Jean Pierre",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis neque numquam in tempora quis commodi consequuntur reiciendis nam laboriosam."
+    }
+  ],
+  "gallery": [
+    "https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-6/471630281_522796790792850_4633505364110677779_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=KJtz18bbdA0Q7kNvwH4-dy5&_nc_oc=AdlLZ2ktmhaYDY6K4Q58d_p2ksdElBtdSrMK9jFK4D2jAIpMEJOlfjTXJN51R_1LfpLgRJ7HaophHW94NENxEfAW&_nc_zt=23&_nc_ht=scontent-mia3-3.xx&_nc_gid=d2FVadr-cTCK2S-LM8f0MA&oh=00_AfTKernVLC2CPMBCvap6NnXZ_VFnAiwOJ7PLWdfw_h6AHw&oe=688AFB18",
+    "https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-6/340434039_953310952536899_6270890581502531852_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=0KJy3F8vyXcQ7kNvwFwW8fw&_nc_oc=AdkKjNvyZP2YYEXQmX2HgfdqoRU9lGVXzWCy-A9UFF40B449cmPSPWuEOjHcb5Mbpy5nOh9rV1Tomgopg73AQy7s&_nc_zt=23&_nc_ht=scontent-mia3-3.xx&_nc_gid=g1TO0z1M7wqQwOEhsTFaOw&oh=00_AfTjH1db-8i7reDEzKSJqNuIOkWBXOs0JTleLtg8_8hZhA&oe=688B23D5",
+    "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/477021319_555144074224788_7587120273455860786_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=fyXfAyDLML8Q7kNvwEGAUOG&_nc_oc=AdlB_euCJ7YVIc28uSyAmxB0JadbA914JO0lvsq5Avny4LSVORkkOx4f01JtOA8zmxzvgnyaUywCPCDfdXm8IJQU&_nc_zt=23&_nc_ht=scontent-mia3-2.xx&_nc_gid=CpPTqLKxTFabvJM6kgmsYA&oh=00_AfRc7M8NiZr8cXdsL9gdkbjHBY4QrP_1ZooKdY7Q0nz6Zw&oe=688B2662",
+    "https://scontent-mia5-2.xx.fbcdn.net/v/t39.30808-6/472324018_528659923539870_1522321704707887867_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=86c6b0&_nc_ohc=jK2EyT41CQkQ7kNvwFInjDn&_nc_oc=AdkdHq0aejdL_p4nha-6OjYIQSYmN2aMGy2BF5QIkJxT-PYzYyuD3sJTSBt7MSRSJ2qIVdKEJ9s-Fbtlh5lyUdw4&_nc_zt=23&_nc_ht=scontent-mia5-2.xx&_nc_gid=BUndOEyTo0kRYsd5GZHWJw&oh=00_AfRKuKNRLAVekBP1VqyP5ZQiFq0WeNk7g5gxyJGXbe3UAg&oe=688B0E3E",
+    "https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-6/481339729_575654592173736_8806413755054734885_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=VHRKirUEJTEQ7kNvwH5Tv4o&_nc_oc=AdnOOarSkFLuHui6GXmu7C-gygL0_05mAv-suWVyATUEj-fVG-DxM_HUEVwKELpeLqREzymzZpKZ4b9GeDf-WYBn&_nc_zt=23&_nc_ht=scontent-mia3-1.xx&_nc_gid=3XWOzHyjnTH0yYo07Oxrag&oh=00_AfRJekBqwLyA7XFwffSQ7ckzXf7j5sCaJIUK18tm-mHvfA&oe=688B156C",
+    "https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-6/482005635_575655625506966_4029460027305395345_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6L0P4KFrWtYQ7kNvwFWvzUz&_nc_oc=Adn6N_JkRrw46IAlOWdTWFV0r99Yoq2OEn7T_uEHgOHoZU6ffWOnSO_LZuETKE7QtEl0GmGdv-vzV1UY3QvqHwHv&_nc_zt=23&_nc_ht=scontent-mia3-1.xx&_nc_gid=hVB5IdFjUbLv5xcqL3uxBA&oh=00_AfTCg7-e6P7sdhCvn4iIz39Le0TsgljivowkZUoyvy5CDg&oe=688B256A",
+    "https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-6/481916887_575653722173823_1316368362847827476_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vYOcv1jQhk0Q7kNvwFfuJyf&_nc_oc=AdkiIFJqA9VkZvvOoFaujJ4XYAM6eQ6zEvE4sHEGnUyZ26KSJd8gCW8QNrHh1hHFqkFL6TpuDzy2qonZ4ti3yDrM&_nc_zt=23&_nc_ht=scontent-mia5-1.xx&_nc_gid=s2vp6jPoP8Zhr0vcldxXXg&oh=00_AfTswrUApzHU9Lqa5v6JErj4Bhtw5EKaz_ipEvmMLEx4HQ&oe=688B2659",
+    "https://scontent-mia5-2.xx.fbcdn.net/v/t39.30808-6/480815747_563586326713896_6972338149981048126_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=TYydKv8F54wQ7kNvwHJIvhl&_nc_oc=AdnxIpZR3nNylIffQ-4mLu11B4unMeK4KFaXwp428SCLlaBIfU1HEwkFFGef043x30dI087L4EkJ3122rJACNbK2&_nc_zt=23&_nc_ht=scontent-mia5-2.xx&_nc_gid=zab4jX_zgXRQdZMNEMv40w&oh=00_AfReHUU4WFCTNSYXktcVzKr7MvxvopTZl6dnuJNc9ZN6NQ&oe=688B130C"
+  ],
+  "newsletterTitle": "Inscrivez-vous à notre Newsletter",
+  "newsletterText": "Recevez les dernières actualités, offres et mises à jour directement dans votre boîte mail.",
+  "newsletterFormAction": "https://votre-lien-formulaire.com",
+  "newsletterPlaceholder": "Entrez votre email",
+  "newsletterButton": "S'abonner",
+  "footerCopyright": "© 2024 MAKAYA. Tous droits réservés.",
+  "contact_email": "charlesjohnmart@gmail.com",
+  "contact_phone": "+50912345678",
+  "flyers": [
+    "https://spca.education/wp-content/uploads/2025/01/flyer.webp",
+    "https://cdn.dribbble.com/userupload/37433618/file/original-f5e057d138b61340884662133ca2018e.jpg?resize=400x0"
+  ],
+  "headerLogo": "../icon/thumbnail_LOGO MAKAYA 023 png.png",
+  "headerSlogan": "AN N ANGAJE N",
+  "socials": [
+    {
+      "icon": "../icon/instagram (1).png",
+      "url": "#"
+    },
+    {
+      "icon": "../icon/facebook.png",
+      "url": "#"
+    },
+    {
+      "icon": "../icon/twitter.png",
+      "url": "#"
+    }
+  ],
+  "menuLinks": [
+    {
+      "label": "HOME",
+      "url": "../php/acueil.php",
+      "id": "home"
+    },
+    {
+      "label": "ABOUT US",
+      "url": "../php/about.php"
+    },
+    {
+      "label": "NOTRE BLOG",
+      "url": "../php/blog.php"
+    },
+    {
+      "label": "CONTACT",
+      "url": "../php/contact.php"
+    }
+  ],
+  "reservationButtonLabel": "RESERVER ICI",
+  "reservationButtonLink": "#",
+  "videoSection": {
+    "videoSrc": "https://youtu.be/lTzrmLJUoUk?si=WtXu8CVIB1Cbir7e",
+    "videoTitle": "Save the planet",
+    "videoText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus minima pariatur libero, expedita voluptatem accusamus fuga aperiam? Accusamus voluptates corrupti tempore ex accusantium ipsum, nobis cupiditate, nulla aut voluptate aspernatur veniam? Ducimus, assumenda. Autem dicta porro quelque chose inventore vitae? Excepturi harum placeat aut. Natus veritatis earum vitae alias fugit quod voluptatum autem neque illum nulla, magnam mollitia ipsum assumenda fugiat eos quis dolorem eum aperiam? Ea id exercitationem quia repellendus sint blanditiis nulla souvent ratione, culpa, nobis recusandae, eveniet sed quelque chose veritatis! Iusto animi voluptatum beatae, iure ipsam officiis voluptate odio commodi, dignissimos quod veniam fugiat inventore officia excepturi accusamus maxime sapiente quelque chose asperiores assumenda hic ad. Rem molestiae reiciendis nemo modi omnis obcaecati ut, quas cum nesciunt illum animi reprehenderit aut recusandae praesentium voluptates quae deleniti autem maiores nihil a exercitationem, laboriosam beatae culpa! Deleniti, et architecto dolores velit hic in pariatur cum minus fuga? Iste neque repellendus labore nobis tempore sont vitae consectetur quam adipisci, fuga illo hic suscipit, ea sapiente obcaecati praesentium assumenda earum voluptate cumque sit eveniet quaerat quas tenetur? Tempora modi porro quas tenetur pariatur repellendus quae voluptates corporis perspiciatis excepturi! Atque officiis quelque chose voluptatum culpa, consequuntur cum sequi neque, perspiciatis sapiente ad, vel dolor."
+  },
+  "galleryTitle": "",
+  "galleryDescription": "",
+  "logoUrl": "",
+  "mainColor": "#ffffff",
+  "fontFamily": "Montserrat",
+  "aboutColor": "#ffffff",
+  "aboutFont": "Montserrat",
+  "evenementColor": "#ffffff",
+  "evenementFont": "Montserrat",
+  "membersColor": "#ffffff",
+  "membersFont": "Montserrat",
+  "galleryColor": "#ffffff",
+  "galleryFont": "Montserrat",
+  "newsletterColor": "#ffffff",
+  "newsletterFont": "Montserrat",
+  "aboutBtnColor": "#219653",
+  "evenementBtnColor": "#219653",
+  "membersBtnColor": "#219653",
+  "galleryBtnColor": "#219653",
+  "newsletterBtnColor": "#052915"
+}

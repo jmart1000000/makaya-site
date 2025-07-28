@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Makaya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .contact-info h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-left: 4px solid #667eea;
+            background: #f8f9fa;
+        }
+
+        .contact-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .contact-item p {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .hours-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .day-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem;
+            background: white;
+            border-radius: 5px;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .contact-form h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .social-media {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .social-media h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .response-time {
+            background: #e8f5e8;
+            border-left: 4px solid #28a745;
+            padding: 1rem;
+            margin-top: 2rem;
+            border-radius: 5px;
+        }
+
+        .response-time p {
+            margin: 0;
+            color: #155724;
+            font-weight: 600;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border: 2px solid #667eea;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .hours-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header data-aos="fade-down">
+        <h1 id="contact-title">Contactez-nous</h1>
+        <p id="contact-description">N'hésitez pas à nous contacter pour toute question ou demande d'information.</p>
+    </header>
+
+    <div class="container">
+        <a href="/" class="back-link">← Retour à l'accueil</a>
+        
+        <div class="contact-grid">
+            <!-- Informations de contact -->
+            <div class="contact-info" data-aos="fade-right">
+                <h2>Nos Coordonnées</h2>
+                
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:" id="contact-email-link">Chargement...</a></p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>📞 Téléphone</h3>
+                    <p><a href="tel:" id="contact-phone-link">Chargement...</a></p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>📍 Adresse</h3>
+                    <div id="contact-address">
+                        <div class="loading">Chargement de l'adresse...</div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <h3>🕒 Horaires d'ouverture</h3>
+                    <div class="hours-grid" id="business-hours">
+                        <div class="loading">Chargement des horaires...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulaire de contact -->
+            <div class="contact-form" data-aos="fade-left">
+                <h2>Envoyez-nous un message</h2>
+                <form id="contact-form-element">
+                    <div id="form-fields">
+                        <div class="loading">Chargement du formulaire...</div>
+                    </div>
+                    <button type="submit" class="submit-btn">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Réseaux sociaux -->
+        <div class="social-media" data-aos="fade-up">
+            <h2>Suivez-nous</h2>
+            <div class="social-links" id="social-links">
+                <div class="loading">Chargement des réseaux sociaux...</div>
+            </div>
+        </div>
+
+        <!-- Temps de réponse -->
+        <div class="response-time" data-aos="fade-up">
+            <p id="response-time-text">Chargement...</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        let contactData = null;
+
+        // Charger les données de contact
+        async function loadContactData() {
+            try {
+                const response = await fetch('/api/contact');
+                contactData = await response.json();
+                
+                // Mettre à jour le contenu
+                updateContactInfo();
+                updateContactForm();
+                updateSocialMedia();
+                
+            } catch (error) {
+                console.error('Erreur lors du chargement des données de contact:', error);
+                showError();
+            }
+        }
+
+        function updateContactInfo() {
+            // Titre et description
+            document.getElementById('contact-title').textContent = contactData.title || 'Contactez-nous';
+            document.getElementById('contact-description').textContent = contactData.description || '';
+
+            // Email et téléphone
+            const emailLink = document.getElementById('contact-email-link');
+            const phoneLink = document.getElementById('contact-phone-link');
+            
+            if (contactData.contact) {
+                emailLink.href = 'mailto:' + contactData.contact.email;
+                emailLink.textContent = contactData.contact.email;
+                
+                phoneLink.href = 'tel:' + contactData.contact.phone;
+                phoneLink.textContent = contactData.contact.phone;
+
+                // Adresse
+                if (contactData.contact.address) {
+                    const addressDiv = document.getElementById('contact-address');
+                    addressDiv.innerHTML = `
+                        <p>${contactData.contact.address.street}</p>
+                        <p>${contactData.contact.address.postalCode} ${contactData.contact.address.city}</p>
+                        <p>${contactData.contact.address.country}</p>
+                    `;
+                }
+            }
+
+            // Horaires d'ouverture
+            if (contactData.businessHours) {
+                const hoursDiv = document.getElementById('business-hours');
+                hoursDiv.innerHTML = '';
+                
+                const daysTranslation = {
+                    monday: 'Lundi',
+                    tuesday: 'Mardi',
+                    wednesday: 'Mercredi',
+                    thursday: 'Jeudi',
+                    friday: 'Vendredi',
+                    saturday: 'Samedi',
+                    sunday: 'Dimanche'
+                };
+                
+                Object.entries(contactData.businessHours).forEach(([day, hours]) => {
+                    const dayItem = document.createElement('div');
+                    dayItem.className = 'day-item';
+                    dayItem.innerHTML = `
+                        <span>${daysTranslation[day] || day}</span>
+                        <span>${hours}</span>
+                    `;
+                    hoursDiv.appendChild(dayItem);
+                });
+            }
+
+            // Temps de réponse
+            if (contactData.responseTime) {
+                document.getElementById('response-time-text').textContent = contactData.responseTime;
+            }
+        }
+
+        function updateContactForm() {
+            if (contactData.contactForm && contactData.contactForm.enabled) {
+                const formFields = document.getElementById('form-fields');
+                formFields.innerHTML = '';
+                
+                contactData.contactForm.fields.forEach(field => {
+                    const formGroup = document.createElement('div');
+                    formGroup.className = 'form-group';
+                    
+                    let inputElement = '';
+                    if (field.type === 'textarea') {
+                        inputElement = `<textarea name="${field.name}" id="${field.name}" ${field.required ? 'required' : ''}></textarea>`;
+                    } else {
+                        inputElement = `<input type="${field.type}" name="${field.name}" id="${field.name}" ${field.required ? 'required' : ''}>`;
+                    }
+                    
+                    formGroup.innerHTML = `
+                        <label for="${field.name}">${field.label}${field.required ? ' *' : ''}</label>
+                        ${inputElement}
+                    `;
+                    
+                    formFields.appendChild(formGroup);
+                });
+            }
+            
+            // Gestionnaire de soumission du formulaire
+            document.getElementById('contact-form-element').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData);
+                
+                // Simulation d'envoi
+                alert('Merci pour votre message ! Nous vous répondrons bientôt.');
+                this.reset();
+            });
+        }
+
+        function updateSocialMedia() {
+            if (contactData.socialMedia) {
+                const socialLinks = document.getElementById('social-links');
+                socialLinks.innerHTML = '';
+                
+                const socialIcons = {
+                    linkedin: '💼',
+                    twitter: '🐦',
+                    github: '👨‍💻',
+                    facebook: '📘',
+                    instagram: '📷'
+                };
+                
+                Object.entries(contactData.socialMedia).forEach(([platform, url]) => {
+                    if (url) {
+                        const link = document.createElement('a');
+                        link.href = url;
+                        link.target = '_blank';
+                        link.textContent = socialIcons[platform] || '🔗';
+                        link.title = platform.charAt(0).toUpperCase() + platform.slice(1);
+                        socialLinks.appendChild(link);
+                    }
+                });
+            }
+        }
+
+        function showError() {
+            document.body.innerHTML = `
+                <div style="padding:2rem;text-align:center;color:#c00;font-size:1.3rem;">
+                    Erreur : Impossible de charger les informations de contact.<br>
+                    Vérifiez que le serveur Node.js est bien démarré et que l'API est accessible.
+                </div>
+            `;
+        }
+
+        // Initialisation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Charger les données
+            loadContactData();
+            
+            // Initialiser AOS
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-in-out',
+                once: true
+            });
+        });
+    </script>
+</body>
+</html>

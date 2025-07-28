@@ -1,0 +1,54 @@
+{
+  "title": "À propos de nous",
+  "company": {
+    "name": "Mon Site",
+    "foundedYear": 2025,
+    "mission": "Créer des solutions web innovantes et performantes pour nos clients",
+    "vision": "Devenir la référence en développement web moderne et accessible"
+  },
+  "description": "Nous sommes une équipe passionnée de développeurs et de designers dédiés à la création d'expériences web exceptionnelles. Notre expertise couvre l'ensemble du développement web, de la conception à la mise en production.",
+  "values": [
+    {
+      "name": "Innovation",
+      "description": "Nous utilisons les technologies les plus récentes pour créer des solutions avant-gardistes"
+    },
+    {
+      "name": "Qualité",
+      "description": "Chaque projet est réalisé avec le plus haut niveau de qualité et d'attention aux détails"
+    },
+    {
+      "name": "Collaboration",
+      "description": "Nous travaillons en étroite collaboration avec nos clients pour réaliser leur vision"
+    },
+    {
+      "name": "Performance",
+      "description": "Nos solutions sont optimisées pour offrir les meilleures performances possibles"
+    }
+  ],
+  "team": [
+    {
+      "name": "Équipe de développement",
+      "role": "Développeurs Full-Stack",
+      "description": "Experts en JavaScript, Node.js, et technologies web modernes"
+    },
+    {
+      "name": "Équipe design",
+      "role": "UI/UX Designers",
+      "description": "Créateurs d'interfaces utilisateur intuitives et esthétiques"
+    }
+  ],
+  "technologies": [
+    "Node.js",
+    "Express.js",
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Docker",
+    "Google Cloud Platform"
+  ],
+  "contact": {
+    "message": "Nous serions ravis de discuter de votre projet avec vous.",
+    "cta": "Contactez-nous dès aujourd'hui pour une consultation gratuite."
+  },
+  "lastUpdated": "2025-07-25"
+}

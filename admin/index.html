@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Admin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #2d2d2d;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px 0;
+            border-bottom: 2px solid #444;
+        }
+        .admin-nav {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .admin-card {
+            background: #3d3d3d;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            min-width: 200px;
+            text-align: center;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .admin-card:hover {
+            background: #4d4d4d;
+        }
+        .admin-card h3 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+        .status {
+            margin: 20px 0;
+            padding: 15px;
+            background: #333;
+            border-radius: 5px;
+        }
+        .btn {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .btn:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔧 Interface Administration</h1>
+            <p>Gestion du contenu et des fonctionnalités du site</p>
+        </header>
+        
+        <div class="status">
+            <h3>État du serveur</h3>
+            <p id="server-status">🟢 Serveur en ligne</p>
+            <button class="btn" onclick="window.location.href='/'">Voir le site public</button>
+        </div>
+        
+        <div class="admin-nav">
+            <div class="admin-card" onclick="manageContent()">
+                <h3>📝 Contenu</h3>
+                <p>Gérer le contenu de la page d'accueil</p>
+            </div>
+            
+            <div class="admin-card" onclick="manageBlog()">
+                <h3>📰 Blog</h3>
+                <p>Gérer les articles du blog</p>
+            </div>
+            
+            <div class="admin-card" onclick="manageAbout()">
+                <h3>ℹ️ À propos</h3>
+                <p>Modifier les informations de l'entreprise</p>
+            </div>
+            
+            <div class="admin-card" onclick="manageContact()">
+                <h3>📞 Contact</h3>
+                <p>Gérer les informations de contact</p>
+            </div>
+        </div>
+        
+        <div id="editor-area" style="margin-top: 30px;">
+            <h3>Éditeur (Interface temporaire)</h3>
+            <p>Interface d'édition complète à développer...</p>
+            <textarea id="json-editor" style="width: 100%; height: 200px; background: #444; color: white; border: 1px solid #666; padding: 10px;" placeholder="Interface d'édition JSON temporaire"></textarea>
+            <br>
+            <button class="btn" onclick="saveChanges()">Sauvegarder</button>
+        </div>
+    </div>
+
+    <script>
+        function manageContent() {
+            document.getElementById('json-editor').placeholder = 'Édition du contenu principal (content.json)';
+            loadJsonFile('/api/content');
+        }
+        
+        function manageBlog() {
+            document.getElementById('json-editor').placeholder = 'Édition des articles du blog (blog.json)';
+            loadJsonFile('/api/blog');
+        }
+        
+        function manageAbout() {
+            document.getElementById('json-editor').placeholder = 'Édition des informations à propos (about.json)';
+            loadJsonFile('/api/about');
+        }
+        
+        function manageContact() {
+            document.getElementById('json-editor').placeholder = 'Édition des informations de contact (contact.json)';
+            loadJsonFile('/api/contact');
+        }
+        
+        async function loadJsonFile(endpoint) {
+            try {
+                const response = await fetch(endpoint);
+                const data = await response.json();
+                document.getElementById('json-editor').value = JSON.stringify(data, null, 2);
+            } catch (error) {
+                console.error('Erreur:', error);
+                alert('Erreur lors du chargement des données');
+            }
+        }
+        
+        function saveChanges() {
+            // Interface temporaire - à implémenter avec une vraie API de sauvegarde
+            alert('Fonctionnalité de sauvegarde à implémenter');
+        }
+        
+        // Vérifier l'état du serveur
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('/api/content')
+                .then(() => {
+                    document.getElementById('server-status').innerHTML = '🟢 Serveur en ligne';
+                })
+                .catch(() => {
+                    document.getElementById('server-status').innerHTML = '🔴 Erreur de connexion';
+                });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "title": "Blog - Actualités et Articles",
+  "articles": [
+    {
+      "id": 1,
+      "title": "Lancement de notre nouveau site web",
+      "summary": "Découvrez les nouvelles fonctionnalités et améliorations de notre plateforme",
+      "content": "Nous sommes fiers de vous présenter notre nouveau site web, entièrement repensé pour offrir une meilleure expérience utilisateur. Cette nouvelle version intègre les dernières technologies web et propose une interface moderne et intuitive.",
+      "author": "Équipe de développement",
+      "date": "2025-07-25",
+      "tags": ["lancement", "web", "technologie"],
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Les avantages du développement moderne",
+      "summary": "Pourquoi choisir les technologies actuelles pour vos projets web",
+      "content": "Le développement web moderne offre de nombreux avantages : performance améliorée, sécurité renforcée et maintenabilité optimisée. Découvrez comment ces technologies peuvent transformer votre présence en ligne.",
+      "author": "Expert technique",
+      "date": "2025-07-20",
+      "tags": ["développement", "performance", "sécurité"],
+      "featured": false
+    },
+    {
+      "id": 3,
+      "title": "Optimisation pour les moteurs de recherche",
+      "summary": "Techniques et stratégies pour améliorer votre référencement",
+      "content": "Le SEO est crucial pour la visibilité en ligne. Nous partageons nos meilleures pratiques pour optimiser votre site web et améliorer votre positionnement dans les résultats de recherche.",
+      "author": "Spécialiste SEO",
+      "date": "2025-07-15",
+      "tags": ["SEO", "référencement", "optimisation"],
+      "featured": false
+    }
+  ],
+  "categories": ["Technologie", "Développement", "SEO", "Performance"],
+  "lastUpdated": "2025-07-25"
+}

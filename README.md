@@ -122,8 +122,8 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 **MAKAYA** - Organisation communautaire
 - Email: contact@makaya.org
-- Site: https://makaya-site.web.app
+- Site: https://makaya.org
 
 ---
 
-**Développé avec ❤️ pour la communauté MAKAYA**
+**Développé avec jmart1000000 pour la communauté MAKAYA**

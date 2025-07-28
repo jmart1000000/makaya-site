@@ -203,6 +203,60 @@
             background-color: #d18b07;
         }
         
+        /* Section produits */
+        .produits-section {
+            background: #f8f9fa;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .produits-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .produits-title {
+            font-size: 2.5rem;
+            color: var(--primary-green);
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-family: "Bebas Neue", sans-serif;
+        }
+        
+        .produits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .produit-item {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .produit-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .produit-nom {
+            font-size: 1.5rem;
+            color: var(--primary-green);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .produit-prix {
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+            font-weight: 700;
+        }
+        
         /* Footer */
         .custom-footer {
             background-color: #222;
@@ -2023,6 +2077,16 @@ only screen and (max-width: 768px) and (max-height: 1024px) {
         <div class="gallery-description" id="gallery-description"></div>
     </section>
 
+    <!-- Section Produits -->
+    <section class="produits-section" data-aos="fade-up" data-aos-delay="200">
+        <div class="produits-container">
+            <h2 class="produits-title">Nos Produits</h2>
+            <div id="liste-produits" class="produits-list">
+                <div class="loading">Chargement des produits...</div>
+            </div>
+        </div>
+    </section>
+
     <div class="newsletter-container"> 
         <div class="newsletter-content">
             <h2 class="newsletter-title" id="newsletter-title">Restez Informés</h2>
@@ -2046,6 +2110,7 @@ only screen and (max-width: 768px) and (max-height: 1024px) {
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="produits.js"></script>
     <script>
         // Configuration du site
         let siteData = null;
